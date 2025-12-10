@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan V Somani | Future Tech</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;700;800&family=Rajdhani:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Background Particles -->
+    <canvas id="bg-canvas"></canvas>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <i class="fas fa-cube"></i> RS<span>.DEV</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="bio.html">Bio Data</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Comms</a></li>
+                </ul>
+                <button class="menu-btn"><i class="fas fa-bars"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="hero-subtitle">System Online // Welcome User</p>
+                    <h1 class="hero-title">
+                        I am <br>
+                        <span data-text="Rohan V Somani">Rohan V Somani</span>
+                    </h1>
+                    <p class="hero-subtitle" style="margin-top: 1rem; max-width: 600px; margin-inline: auto;">
+                        Architecting digital realities. Full stack engineer specialized in future-proof web solutions.
+                    </p>
+                    <div class="btn-group">
+                        <a href="resume.html" class="btn-cyber primary">View Resume</a>
+                        <a href="contact.html" class="btn-cyber secondary">Init Contact</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" style="padding: 4rem 2rem; position: relative; z-index: 10;">
+            <div class="glass-panel"
+                style="padding: 3rem; border-radius: 20px; text-align: center; max-width: 900px; margin: 0 auto;">
+                <h2 class="section-title">Profile Data</h2>
+                <p style="color: var(--text-muted); font-size: 1.2rem; line-height: 1.8;">
+                    I am a passionate technology enthusiast with a drive to create.
+                    Specializing in <span style="color: var(--primary)">React</span>, <span
+                        style="color: var(--secondary)">Node.js</span>, and modern web frameworks.
+                    I build accessible, pixel-perfect, and performant web experiences.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Rohan V Somani. All Systems Nominal.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

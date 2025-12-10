@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan V Somani | Bio Data</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;700;800&family=Rajdhani:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <style>
+        .bio-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .bio-card {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            transition: var(--transition);
+        }
+
+        .bio-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 0 20px rgba(0, 243, 255, 0.1);
+        }
+
+        .bio-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .bio-value {
+            color: var(--text-main);
+            font-size: 1.2rem;
+            font-family: var(--font-tech);
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .bio-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Background Particles -->
+    <canvas id="bg-canvas"></canvas>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <i class="fas fa-cube"></i> RS<span>.DEV</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bio.html" class="active">Bio Data</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Comms</a></li>
+                </ul>
+                <button class="menu-btn"><i class="fas fa-bars"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding-top: 120px; padding-bottom: 50px;">
+        <section class="container">
+            <div class="section-head">
+                <h2 class="section-title">Personnel Data</h2>
+                <p class="hero-subtitle" style="margin-top: 10px;">Authorized User Profile</p>
+            </div>
+
+            <div class="glass-panel" style="padding: 3rem; border-radius: 20px; margin-bottom: 3rem;">
+                <div class="bio-grid">
+                    <div class="bio-item">
+                        <p class="bio-label">Full Name</p>
+                        <p class="bio-value">Rohan V Somani</p>
+                    </div>
+
+                    <div class="bio-item">
+                        <p class="bio-label">Designation</p>
+                        <p class="bio-value" style="color: var(--primary);">Computer Science Engineer (AI & ML)</p>
+                    </div>
+
+                    <div class="bio-item">
+                        <p class="bio-label">Contact Link</p>
+                        <p class="bio-value">+91 8861202575</p>
+                    </div>
+
+                    <div class="bio-item">
+                        <p class="bio-label">Electronic Mail</p>
+                        <p class="bio-value">rohanvsomani@gmail.com</p>
+                    </div>
+
+                    <div class="bio-item">
+                        <p class="bio-label">Location Data</p>
+                        <p class="bio-value">Bangalore, Karnataka</p>
+                    </div>
+
+                    <div class="bio-item">
+                        <p class="bio-label">LeetCode Operations</p>
+                        <p class="bio-value">TZJ48znx2c (Rating: 1637)</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 3rem; border-top: 1px solid var(--glass-border); padding-top: 2rem;">
+                    <p class="bio-label">Summary</p>
+                    <p style="color: var(--text-muted); line-height: 1.8; font-size: 1.1rem;">
+                        Passionate software engineer specializing in AI/ML and Full Stack Development.
+                        Proven track record in solving complex algorithmic problems (140+ LeetCode) and winning
+                        hackathons.
+                        Dedicated to architecting efficient, scalable solutions that merge machine learning with modern
+                        web technologies.
+                    </p>
+                </div>
+
+                <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="https://github.com/RohanVsomani" target="_blank" class="btn-cyber secondary"
+                        style="font-size: 0.9rem; padding: 0.8rem 1.5rem;">
+                        <i class="fab fa-github"></i> GitHub Protocol
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="btn-cyber secondary"
+                        style="font-size: 0.9rem; padding: 0.8rem 1.5rem;">
+                        <i class="fab fa-linkedin"></i> LinkedIn Uplink
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Rohan V Somani. All Systems Nominal.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

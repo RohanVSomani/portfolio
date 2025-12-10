@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan V Somani | Resume</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;700;800&family=Rajdhani:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Background Particles -->
+    <canvas id="bg-canvas"></canvas>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <i class="fas fa-cube"></i> RS<span>.DEV</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bio.html">Bio Data</a></li>
+                    <li><a href="resume.html" class="active">Resume</a></li>
+                    <li><a href="contact.html">Comms</a></li>
+                </ul>
+                <button class="menu-btn"><i class="fas fa-bars"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container" style="padding-top: 120px;">
+            <div class="section-head">
+                <h2 class="section-title">Resume</h2>
+                <p class="hero-subtitle" style="margin-top: 10px;">Experience & Technical Capabilities</p>
+                <div style="margin-top: 2rem;">
+                    <a href="Resume_RohanVSomani (3).pdf" class="btn-cyber secondary" download>
+                        <i class="fas fa-file-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+
+            <div class="resume-grid">
+                <!-- Sidebar Tabs -->
+                <div class="resume-tabs">
+                    <button class="tab-btn active" data-target="#projects">
+                        <i class="fas fa-project-diagram"></i> Projects
+                    </button>
+                    <button class="tab-btn" data-target="#education">
+                        <i class="fas fa-graduation-cap"></i> Education
+                    </button>
+                    <button class="tab-btn" data-target="#skills">
+                        <i class="fas fa-code"></i> Skills & Tools
+                    </button>
+                    <button class="tab-btn" data-target="#experience">
+                        <i class="fas fa-trophy"></i> Achievements
+                    </button>
+                </div>
+
+                <!-- Content Area -->
+                <div class="glass-panel" style="padding: 2rem; border-radius: 12px; min-height: 500px;">
+
+                    <!-- Projects Section (Now Primary) -->
+                    <div id="projects" class="resume-content">
+                        <h3 class="neon-text"
+                            style="font-family: var(--font-tech); font-size: 1.8rem; margin-bottom: 2rem; text-transform: uppercase; color: var(--primary);">
+                            Projects
+                        </h3>
+
+                        <div class="timeline-item">
+                            <h4 class="role">Restaurant Takeaway <span
+                                    style="font-size: 0.8rem; color: var(--secondary);">Frontend</span></h4>
+                            <p class="text-muted" style="margin-bottom: 0.5rem;">
+                                Developed a responsive restaurant takeaway web application that allows users to
+                                seamlessly browse a digital menu, add food items to a shopping cart, and persist their
+                                orders across sessions.
+                            </p>
+                            <p style="font-size: 0.9rem; color: var(--primary);">Tech Stack: HTML, CSS, JavaScript</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <h4 class="role">Event Management Project <span
+                                    style="font-size: 0.8rem; color: var(--secondary);">Full-Stack</span></h4>
+                            <p class="text-muted" style="margin-bottom: 0.5rem;">
+                                Developed a full-stack event management platform using React.js, Redux, Node.js, and
+                                Express, featuring role-based access for admins, organizers, and participants.
+                            </p>
+                            <p style="font-size: 0.9rem; color: var(--primary);">Tech Stack: HTML, CSS, JavaScript,
+                                Node.js, Express.js, PostgreSQL</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <h4 class="role">Daily Schedule Assistant <span
+                                    style="font-size: 0.8rem; color: var(--secondary);">Java Server Page</span></h4>
+                            <p class="text-muted" style="margin-bottom: 0.5rem;">
+                                Built a desktop-based scheduling assistant in Java that reads daily tasks from input
+                                files and automatically organizes them into an hour-by-hour schedule.
+                            </p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <h4 class="role">Eco Route <span style="font-size: 0.8rem; color: var(--secondary);">Machine
+                                    Learning</span></h4>
+                            <p class="text-muted" style="margin-bottom: 0.5rem;">
+                                Developed an AI-powered EcoRoute system that integrates machine learning and geospatial
+                                routing to recommend optimal land and ocean transport paths — reducing CO2 emissions by
+                                up to 30%.
+                            </p>
+                            <p style="font-size: 0.9rem; color: var(--primary);">Tech Stack: Python, Scikit-Learn, React
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Education Section -->
+                    <div id="education" class="resume-content" style="display: none;">
+                        <h3 class="neon-text"
+                            style="font-family: var(--font-tech); font-size: 1.8rem; margin-bottom: 2rem; text-transform: uppercase; color: var(--primary);">
+                            Education
+                        </h3>
+
+                        <div class="timeline-item">
+                            <h4 class="role">BE in Computer Science and Engineering</h4>
+                            <p class="company">Bangalore Institute Of Technology</p>
+                            <p class="date">2023 - present</p>
+                            <p class="text-muted">
+                                CGPA: 9.32/10.0
+                            </p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <h4 class="role">Pre-University College</h4>
+                            <p class="company">S.G.P.T.A PU College</p>
+                            <p class="date">2021 - 2023</p>
+                            <p class="text-muted">
+                                Percentage: 95.83%
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Skills Section -->
+                    <div id="skills" class="resume-content" style="display: none;">
+                        <h3 class="neon-text"
+                            style="font-family: var(--font-tech); font-size: 1.8rem; margin-bottom: 2rem; text-transform: uppercase; color: var(--primary);">
+                            Skills & Tools
+                        </h3>
+
+                        <div style="margin-bottom: 2rem;">
+                            <h4 style="color: var(--text-main); margin-bottom: 1rem;">Programming Languages</h4>
+                            <div class="skills-grid">
+                                <div class="skill-card">
+                                    <p>C++</p>
+                                </div>
+                                <div class="skill-card">
+                                    <p>Java</p>
+                                </div>
+                                <div class="skill-card">
+                                    <p>Python (Basics)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 2rem;">
+                            <h4 style="color: var(--text-main); margin-bottom: 1rem;">Frontend</h4>
+                            <div class="skills-grid">
+                                <div class="skill-card">
+                                    <p>HTML</p>
+                                </div>
+                                <div class="skill-card">
+                                    <p>CSS</p>
+                                </div>
+                                <div class="skill-card">
+                                    <p>JavaScript</p>
+                                </div>
+                                <div class="skill-card">
+                                    <p>React.js</p>
+                                </div>
+                                <div class="skill-card">
+                                    <p>Tailwind</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 2rem;">
+                            <h4 style="color: var(--text-main); margin-bottom: 1rem;">Backend & DB</h4>
+                            <div class="skills-grid">
+                                <div class="skill-card">
+                                    <p>Node.js</p>
+                                </div>
+                                <div class="skill-card">
+                                    <p>Express.js</p>
+                                </div>
+                                <div class="skill-card">
+                                    <p>MongoDB</p>
+                                </div>
+                                <div class="skill-card">
+                                    <p>SQL</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 2rem;">
+                            <h4 style="color: var(--text-main); margin-bottom: 1rem;">Core CS & Tools</h4>
+                            <div class="skills-grid">
+                                <div class="skill-card">
+                                    <p>DSA & OOPs</p>
+                                </div>
+                                <div class="skill-card">
+                                    <p>Git/GitHub</p>
+                                </div>
+                                <div class="skill-card">
+                                    <p>VS Code</p>
+                                </div>
+                                <div class="skill-card">
+                                    <p>Postman</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Achievements (New Section) -->
+                    <div id="experience" class="resume-content" style="display: none;">
+                        <h3 class="neon-text"
+                            style="font-family: var(--font-tech); font-size: 1.8rem; margin-bottom: 2rem; text-transform: uppercase; color: var(--primary);">
+                            Achievements
+                        </h3>
+                        <div class="timeline-item">
+                            <h4 class="role">LeetCode</h4>
+                            <p class="text-muted">Solved 140+ problems with a peak rating of 1637.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 class="role">Codeathon</h4>
+                            <p class="text-muted">Secured 4th place among 40-50 college teams.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 class="role">Hackathons</h4>
+                            <p class="text-muted">Participated in Smart India Hackathon and Ambition Hackathon with
+                                innovative project contributions.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Rohan V Somani. All Systems Nominal.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

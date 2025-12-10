@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan V Somani | Comms Channel</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;700;800&family=Rajdhani:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Background Particles -->
+    <canvas id="bg-canvas"></canvas>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <i class="fas fa-cube"></i> RS<span>.DEV</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bio.html">Bio Data</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html" class="active">Comms</a></li>
+                </ul>
+                <button class="menu-btn"><i class="fas fa-bars"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container" style="padding-top: 120px;">
+            <div class="section-head">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="hero-subtitle" style="margin-top: 10px;">Open for opportunities and encrypted transmissions.
+                </p>
+            </div>
+
+            <div class="contact-wrapper">
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="glass-panel" style="padding: 2rem; border-radius: 12px;">
+                        <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2rem;">
+                            <div
+                                style="width: 50px; height: 50px; background: rgba(0, 243, 255, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary);">
+                                <i class="fas fa-envelope fa-lg"></i>
+                            </div>
+                            <div>
+                                <h4 style="color: #fff; margin-bottom: 0.2rem;">Direct Feed</h4>
+                                <p style="color: var(--text-muted);">rohanvsomani@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2rem;">
+                            <div
+                                style="width: 50px; height: 50px; background: rgba(188, 19, 254, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--secondary);">
+                                <i class="fas fa-map-marker-alt fa-lg"></i>
+                            </div>
+                            <div>
+                                <h4 style="color: #fff; margin-bottom: 0.2rem;">Coordinates</h4>
+                                <p style="color: var(--text-muted);">Bangalore, India</p>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 3rem;">
+                            <h4 style="color: #fff; margin-bottom: 1.5rem;">Social Uplinks</h4>
+                            <div style="display: flex; gap: 1rem;">
+                                <a href="#" class="btn-cyber primary" style="padding: 0.8rem 1rem;"><i
+                                        class="fab fa-github"></i></a>
+                                <a href="#" class="btn-cyber secondary" style="padding: 0.8rem 1rem;"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="btn-cyber primary" style="padding: 0.8rem 1rem;"><i
+                                        class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form glass-panel" style="padding: 2.5rem; border-radius: 12px;">
+                    <form id="contactForm">
+                        <div style="margin-bottom: 1.5rem;">
+                            <label
+                                style="color: var(--primary); font-family: var(--font-tech); text-transform: uppercase; display: block; margin-bottom: 0.5rem;"
+                                for="name">// User_ID</label>
+                            <input type="text" id="name" class="form-control"
+                                style="width: 100%; font-family: var(--font-tech); letter-spacing: 1px;"
+                                placeholder="ENTER NAME" required>
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <label
+                                style="color: var(--primary); font-family: var(--font-tech); text-transform: uppercase; display: block; margin-bottom: 0.5rem;"
+                                for="email">// Comms_Address</label>
+                            <input type="email" id="email" class="form-control"
+                                style="width: 100%; font-family: var(--font-tech); letter-spacing: 1px;"
+                                placeholder="ENTER EMAIL" required>
+                        </div>
+                        <div style="margin-bottom: 2rem;">
+                            <label
+                                style="color: var(--primary); font-family: var(--font-tech); text-transform: uppercase; display: block; margin-bottom: 0.5rem;"
+                                for="message">// Data_Packet</label>
+                            <textarea id="message" class="form-control" rows="5"
+                                style="width: 100%; font-family: var(--font-tech); letter-spacing: 1px; resize: none;"
+                                placeholder="ENTER MESSAGE" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-cyber primary" style="width: 100%;">Transmit Data</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Rohan V Somani. All Systems Nominal.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
